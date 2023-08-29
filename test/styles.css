@@ -1,0 +1,50 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .homePage_2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%;
+        color: black;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0%; /* Add padding to the right side */
+      }
+      
+      .leafImg {
+        margin-bottom: -10px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      
+      .creatorsBioSubHead {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      
+      .homePage_2_right {
+        margin-top: 65px;
+        flex: 1; /* Take remaining space to be on the right side */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f0f0f0; /* Placeholder background color for the image slider */
+        padding: 0px; /* Add padding to the content */
+      }
+      

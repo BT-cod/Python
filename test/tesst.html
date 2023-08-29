@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="homePage_2">
+    <div class="homePage_2_left">
+      <svg
+        class="leafImg"
+        width="102"
+        height="91"
+        viewBox="-1 -1 102 91"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- SVG path data -->
+      </svg>
+      <p class="creatorsBioHead">
+        Discover the innovative virtual <br />
+        platform for audio enthusiasts <br />
+        and creators
+      </p>
+      <p class="creatorsBioSubHead">
+        Discover Aural, the social audio platform that amplifies your voice<br />
+        and connects you with an enthusiastic audience. <br />
+        Post stories, music, covers, informative facts, or anything you <br />
+        desire with a simple recording. <br /><br /><br />
+        Engage in live audio chat rooms, make friends, and stay anonymous<br />
+        to avoid judgment. Unleash your creativity and join Aural today.
+      </p>
+    </div>
+    <div class="homePage_2_right">
+      <!-- Random image slider content goes here -->
+      <p>Right</p>
+    </div>
+  </div>
+
+  <script>
+    function adjustFontSize() {
+      const screenWidth = window.innerWidth;
+      const fontSize = screenWidth <= 768 ? "1rem" : "2rem";
+
+      document.querySelectorAll(".creatorsBioHead, .creatorsBioSubHead").forEach(element => {
+        element.style.fontSize = fontSize;
+      });
+    }
+
+    function adjustImageSize() {
+      const screenWidth = window.innerWidth;
+      const imageSize = screenWidth <= 768 ? "50px" : "102px";
+
+      document.querySelector(".leafImg").setAttribute("width", imageSize);
+      document.querySelector(".leafImg").setAttribute("height", imageSize);
+    }
+
+    function adjustRightDivSize() {
+      const screenWidth = window.innerWidth;
+      const rightDivWidth = screenWidth <= 768 ? "100%" : "1000px";
+      const rightDivHeight = screenWidth <= 768 ? "300px" : "400px";
+
+      document.querySelector(".homePage_2_right").style.width = rightDivWidth;
+      document.querySelector(".homePage_2_right").style.height = rightDivHeight;
+    }
+
+    function handleResize() {
+      adjustFontSize();
+      adjustImageSize();
+      adjustRightDivSize();
+    }
+
+    // Call the functions on page load and resize events
+    window.addEventListener("load", handleResize);
+    window.addEventListener("resize", handleResize);
+  </script>
+</body>
+</html>
